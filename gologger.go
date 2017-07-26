@@ -1,9 +1,10 @@
 package gologger
 
-import "github.com/sadlil/gologger/logger"
+import "github.com/serainville/gologger/logger"
 
 const (
 	CONSOLE string = "console"
+	BASIC string = "basic-console"
 	FILE string = "file"
 	ELASTICSEARCH string = "es"
 	SimpleLog string = "simple"

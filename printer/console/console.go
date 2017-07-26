@@ -2,7 +2,7 @@ package console
 
 import (
 	"fmt"
-	"github.com/sadlil/gologger/logger"
+	"github.com/serainville/gologger/logger"
 	"time"
 )
 
@@ -10,6 +10,13 @@ func ConsolePrinter(log logger.LogInstance, packageName string, fileName string,
 	color := getColor(log)
 	color.Set()
 	fmt.Printf("[%s] [%s] [%s::%s::%s] [%d] %s\n", log.LogType, time.Format("2006-01-02 15:04:05"), packageName, fileName, funcName, lineNumber, log.Message)
+	Unset()
+}
+
+func ConsoleBasicPrinter(log logger.LogInstance, time time.Time) {
+	color := getColor(log)
+	color.Set()
+	fmt.Printf("[%s] [%s] %s\n", log.LogType, time.Format("2006-01-02 15:04:05"), log.Message)
 	Unset()
 }
 

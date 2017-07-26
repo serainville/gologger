@@ -1,6 +1,6 @@
 package file
 import (
-	"github.com/sadlil/gologger/logger"
+	"github.com/serainville/gologger/logger"
 	"time"
 	"os"
 	"fmt"

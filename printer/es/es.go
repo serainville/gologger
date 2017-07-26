@@ -1,6 +1,6 @@
 package es
 import (
-	"github.com/sadlil/gologger/logger"
+	"github.com/serainville/gologger/logger"
 	"time"
 	"strings"
 	elastigo "github.com/mattbaird/elastigo/lib"

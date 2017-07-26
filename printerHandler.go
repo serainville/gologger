@@ -3,8 +3,8 @@ package gologger
 import (
 	"runtime"
 	"strings"
-	"github.com/sadlil/gologger/printer"
-	"github.com/sadlil/gologger/logger"
+	"github.com/serainville/gologger/printer"
+	"github.com/serainville/gologger/logger"
 	"time"
 	"path"
 )
